@@ -1,0 +1,42 @@
+@baseUrl = http://localhost:3000
+
+### GET semua
+GET {{baseUrl}}/anak-asuh
+
+### GET satu
+GET {{baseUrl}}/anak-asuh/AA-2026-001
+
+### POST
+POST {{baseUrl}}/anak-asuh
+Content-Type: application/json
+
+{
+  "nama": "Aisyah Humaira",
+  "jenisKelamin": "Perempuan",
+  "tempatLahir": "Sumedang",
+  "tanggalLahir": "2013-02-20",
+  "status": "Aktif",
+  "statusPendidikan": "Sedang Sekolah",
+  "sekolah": "SMP Islam Al-Falah",
+  "kelas": "8",
+  "tahunMasuk": 2024,
+  "golonganDarah": "A",
+  "tanggalMasukPanti": "2024-02-20",
+  "asalDaerah": "Sumedang",
+  "namaWali": "Ibu Rina Marlina",
+  "teleponWali": "0813-2211-4455"
+}
+
+### PATCH
+PATCH {{baseUrl}}/anak-asuh/AA-2026-001
+Content-Type: application/json
+
+{
+  "kelas": "8"
+}
+
+### DELETE
+DELETE {{baseUrl}}/anak-asuh/AA-2026-002
+
+### NotFound
+GET {{baseUrl}}/anak-asuh/AA-9999-999
