@@ -4,39 +4,69 @@
 GET {{baseUrl}}/anak-asuh
 
 ### GET satu
-GET {{baseUrl}}/anak-asuh/AA-2026-001
+GET {{baseUrl}}/anak-asuh/AA-2024-001
 
 ### POST
 POST {{baseUrl}}/anak-asuh
 Content-Type: application/json
 
 {
-  "nama": "Aisyah Humaira",
+  "nama": "Salma Nur Fadilah",
   "jenisKelamin": "Perempuan",
-  "tempatLahir": "Sumedang",
-  "tanggalLahir": "2013-02-20",
+  "tempatLahir": "Bandung",
+  "tanggalLahir": "2016-04-11",
   "status": "Aktif",
   "statusPendidikan": "Sedang Sekolah",
-  "sekolah": "SMP Islam Al-Falah",
-  "kelas": "8",
-  "tahunMasuk": 2024,
-  "golonganDarah": "A",
-  "tanggalMasukPanti": "2024-02-20",
-  "asalDaerah": "Sumedang",
-  "namaWali": "Ibu Rina Marlina",
-  "teleponWali": "0813-2211-4455"
+  "sekolah": "SD Negeri 2",
+  "kelas": "4",
+  "tahunMasuk": 2025,
+  "golonganDarah": "O",
+  "riwayatPenyakit": "Tidak ada riwayat penyakit",
+  "alergi": "Tidak ada alergi",
+  "tanggalMasukPanti": "2026-01-10",
+  "asalDaerah": "Bandung",
+  "namaWali": "Ibu Neng Yuliani",
+  "teleponWali": "0812-9090-1234",
+  "keterangan": "Anak baru yang aktif mengikuti kegiatan panti."
 }
 
 ### PATCH
-PATCH {{baseUrl}}/anak-asuh/AA-2026-001
+PATCH {{baseUrl}}/anak-asuh/AA-2026-016
 Content-Type: application/json
 
 {
-  "kelas": "8"
+  "kelas": "5"
+}
+
+### POST duplikat
+POST {{baseUrl}}/anak-asuh
+Content-Type: application/json
+
+{
+  "nama": "Salma Nur Fadilah",
+  "jenisKelamin": "Perempuan",
+  "tempatLahir": "Bandung",
+  "tanggalLahir": "2016-04-11",
+  "status": "Aktif",
+  "statusPendidikan": "Sedang Sekolah",
+  "sekolah": "SD Negeri 2",
+  "kelas": "4",
+  "tahunMasuk": 2025,
+  "golonganDarah": "O",
+  "riwayatPenyakit": "Tidak ada riwayat penyakit",
+  "alergi": "Tidak ada alergi",
+  "tanggalMasukPanti": "2026-01-10",
+  "asalDaerah": "Bandung",
+  "namaWali": "Ibu Neng Yuliani",
+  "teleponWali": "0812-9090-1234",
+  "keterangan": "Anak baru yang aktif mengikuti kegiatan panti."
 }
 
 ### DELETE
-DELETE {{baseUrl}}/anak-asuh/AA-2026-002
+DELETE {{baseUrl}}/anak-asuh/AA-2026-016
+
+### GET satu
+GET {{baseUrl}}/anak-asuh/AA-2024-016
 
 ### NotFound
 GET {{baseUrl}}/anak-asuh/AA-9999-999
