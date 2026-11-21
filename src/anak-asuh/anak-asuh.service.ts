@@ -242,6 +242,7 @@ export class AnakAsuhService {
       asalDaerah: 'Bandung',
       namaWali: 'Bapak Rudi Prasetyo',
       teleponWali: '0812-2828-3838',
+      foto: '/images/anak/andi-prasetyo.png',
       keterangan: 'Gemar bermain sepak bola dan mengikuti kegiatan pramuka.',
     },
     {
@@ -260,6 +261,7 @@ export class AnakAsuhService {
       asalDaerah: 'Cianjur',
       namaWali: 'Ibu Dewi Aprilia',
       teleponWali: '0857-7373-8484',
+      foto: '/images/anak/dina-april.png',
       keterangan: 'Ceria dan senang mengikuti kegiatan kesenian.',
     },
     {
@@ -278,6 +280,7 @@ export class AnakAsuhService {
       asalDaerah: 'Bandung',
       namaWali: 'Bapak Alfian Nugraha',
       teleponWali: '0813-6363-7474',
+      foto: '/images/anak/farendra-alfiansyah.png',
       keterangan: 'Anak yang santun dan aktif dalam kegiatan keagamaan.',
     },
   ];
